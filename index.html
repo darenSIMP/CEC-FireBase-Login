@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="main_div" id="login_div">
+    <h3>Login Authentication</h3>
+    <input type="email" placeholder="Email..." id="email_field">
+    <input type="password" placeholder="Password..." id="password_field">
+    <button onclick="login()">Login</button>
+    </div>
+    <div class="loggedin_div" id="user_div">
+    <h3>YAYYY! You successfully logged-in using Firebase.....</h3>
+    <button onclick="logout()">Logout</button>
+    </div>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyCOngwfdzny-RiDhPmPSNsBZWcAZ4R9Rv8",
+    authDomain: "cec-web-login.firebaseapp.com",
+    projectId: "cec-web-login",
+    storageBucket: "cec-web-login.appspot.com",
+    messagingSenderId: "881329945614",
+    appId: "1:881329945614:web:345c829fa7b400e705505f",
+    measurementId: "G-M6ZCXZWWCQ"
+  };
+  firebase.initializeApp(firebaseConfig);
+  </script>
+</script>
+  </body>
+</html>
